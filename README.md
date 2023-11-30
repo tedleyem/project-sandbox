@@ -3,17 +3,7 @@
 This is a project that can be used as a simple web application for testing Devops strategies like blue/green deployments and upgrades. Need a random app to spin up
 in kubernetes to test out your deployment? Need something not as complex as Wordpress but not as simple as Hello World, this might do the trick.
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
-
-
-
-
-
-
-
 
 ---
 ## Available Scripts
@@ -53,28 +43,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
@@ -85,9 +53,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ---
-# Resources
-[Create React App steps](https://react.dev/learn/start-a-new-react-project)
-[Tailwind Install docs](https://tailwindcss.com/docs/installation)
-[Tailwind Responsive docs](https://tailwindcss.com/docs/responsive-design)
-[Tailwind Elements](https://tw-elements.com/docs/standard/navigation/headers/#)
-[Font Awesome React-Icons](https://react-icons.github.io/react-icons/)
+## Resources
+* [React Homepage](https://reactjs.org/)
+* [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* [Create React App walkthrough](https://react.dev/learn/start-a-new-react-project)
+* [Tailwind Install docs](https://tailwindcss.com/docs/installation)
+* [Tailwind Responsive docs](https://tailwindcss.com/docs/responsive-design)
+* [Tailwind Elements](https://tw-elements.com/docs/standard/navigation/headers/#)
+* [Font Awesome React-Icons](https://react-icons.github.io/react-icons/)
