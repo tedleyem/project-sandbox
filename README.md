@@ -1,11 +1,11 @@
 # Project Sandbox
 
-###### This is a project that can be used a s a simple web application for testing Devops tests and strategies
+This is a project that can be used a s a simple web application for testing Devops tests and strategies
 
 A few example cases would be:
 
 * blue/green deployments in CI/CD pipelines
-* IAC challenges with containers | Infrastructure as Code
+* IAC challenges with containers
 * A Kubernetes test Deployment App
 * and others I can't think of right now
 
