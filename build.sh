@@ -41,7 +41,7 @@ while getopts :dpc flag; do
           ENV="PROD"
           deploy_prod
           ;;
-        *)
+        ?)
           echo "ERROR: Invalid option" && sleep 1
           echo "Please choose an environment to build" && sleep 1
           echo "Choose -d for DEV or -p for PROD" && sleep 1
