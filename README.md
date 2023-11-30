@@ -1,14 +1,21 @@
 # Project Sandbox
 
-This is a project that can be used as a simple web application for testing Devops strategies like blue/green deployments and upgrades. Need a random app to spin up
-in kubernetes to test out your deployment? Need something not as complex as Wordpress but not as simple as Hello World, this might do the trick.
+###### This is a project that can be used a s a simple web application for testing Devops tests and strategies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A few example cases would be:
+
+* blue/green deployments in CI/CD pipelines
+* IAC challenges with containers | Infrastructure as Code
+* A Kubernetes test Deployment App
+* and others I can't think of right now
 
 
 
 
 ---
+##### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 ## Available Scripts
 
 In the project directory, you can run:
