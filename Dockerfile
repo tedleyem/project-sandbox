@@ -1,20 +1,16 @@
-# pull official base image
-FROM node:13.12.0-alpine
+FROM python:3.9
 
-# set working directory
-WORKDIR /app
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+COPY requirements.txt .
 
-# install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --silent
-RUN npm install react-scripts@5.0.1 -g --silent
+# install python dependencies
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 
-# add app
-COPY . ./
+COPY . .
 
-# start app
-CMD ["npm", "start"]
+# gunicorn
+CMD ["gunicorn", "--config", "gunicorn-cfg.py", "run:app"]
