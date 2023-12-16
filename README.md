@@ -1,75 +1,20 @@
-# Project Sandbox
+# Project Sandbox 
 
-This is a project that can be used a s a simple web application for testing Devops tests and strategies
+This sandbox project is used to deploy web apps that can be used for testing development environments. It is intentionally used to allow you to deploy a Simple React or Flask app into a kubernetes cluster, or use in a terraform project to use AWS ECS and ECR services, or docker-compose them locally.
 
-A few example cases would be:
 
-* blue/green deployments in CI/CD pipelines
+##### Example Use cases
+* testing blue/green deployments in CI/CD pipelines
 * IAC challenges with containers
-* A Kubernetes test Deployment App
-* and others I can't think of right now
+* provide an app for deploying into a local minikube cluster
 
 
 
+### Branching Strategy
+The Github actions used in this repo are triggered by branch naming.
 
----
-##### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Branches labeled with the prefix project/ will build and publish the Dockerfiles in the branch and push to dockerhub.
 
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-```
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-```
-
-
-
-
----
-## Resources
-* [React Homepage](https://reactjs.org/)
-* [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-* [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-* [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-* [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-* [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-* [`npm run build` fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-* [Create React App walkthrough](https://react.dev/learn/start-a-new-react-project)
-* [React Deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-* [Tailwind Install docs](https://tailwindcss.com/docs/installation)
-* [Tailwind Responsive docs](https://tailwindcss.com/docs/responsive-design)
-* [Tailwind Elements](https://tw-elements.com/docs/standard/navigation/headers/#)
-* [Font Awesome React-Icons](https://react-icons.github.io/react-icons/)
+# GH Actions
+- Build and Publish Docker images to Dockerhub
+- Deploy React App to GH Pages
