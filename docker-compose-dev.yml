@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  app:
+    container_name: web-dev
+    restart: always
+    env_file: .env
+    build: .
+    volumes:
+      - "./:/app"
+    networks:
+      - db_network
+      - web_network
+  nginx:
+    container_name: nginx-dev
+    restart: always
+    image: "nginx:latest"
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./nginx/dev:/etc/nginx/conf.d
+    networks:
+      - web_network
+    depends_on: 
+      - app
+networks:
+  db_network:
+    driver: bridge
+  web_network:
+    driver: bridge
+ 

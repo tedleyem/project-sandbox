@@ -5,6 +5,15 @@
 # [Datta Able](https://appseed.us/product/datta-able/flask/) Flask/Jinja
 
 
+# Run
+For development based testing with hot-reloading pages run the following:
+$ docker-compose -f docker-compose-dev.yml up
+
+# Requirements
+Werkzeug==2.2.0 dependancy
+
+Because Werkzeug 3.0.0 was released and Flask doesn't specify the dependency correctly (requirements says Werkzeug>=2.2.0). Werkzeug 3.0.0 gets installed and Flask 2.2.2 isn't made for Werkzeug 3.0.0.
+To fix this Werkzeug==2.2.0 must be specifically set in requirements.txt
 
 
 
