@@ -1,4 +1,4 @@
-# Project Sandbox
+# Project Sandbox - React App
 
 This is a project that can be used a s a simple web application for testing Devops tests and strategies
 
@@ -9,7 +9,12 @@ A few example cases would be:
 * A Kubernetes test Deployment App
 * and others I can't think of right now
 
-
+#### USAGE
+The goal in this react app is to check states on database
+connections.
+* Test redis db connection
+* test postgres db connection
+*
 
 
 ---
